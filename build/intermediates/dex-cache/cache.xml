@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jar="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\classes-cf2c8bb2a4464dc1c8e9ec8109741388019baa1c.jar" />
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\classes-b13b4e71e67a89cfe2bb38b1f89440faecf07f8f.jar" />
     </item>
     <item
-        jar="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jar="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\libs\internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="076c7d9e22cc325b8008ff799e0c06dfb8eefdf3">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-225ee34f10b0fe576b32ecdd179d03bc7ef7b16d.jar" />
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-e0fceb34953d498ea9907bfc824cfcd3444e0fbe.jar" />
     </item>
     <item
-        jar="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-439ad54b7f625d0770cf27e904c1954e782bd56b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\classes-3af5e6aab915ee17e4ae1870465468165fc2faeb.jar" />
-    </item>
-    <item
-        jar="C:\Users\Owner\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-920a7b0086a1cffcfe9eb026575dcac60aed1998.jar" />
-    </item>
-    <item
-        jar="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\classes.jar"
+        jar="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="1a57337a520bf40b9ad1e074cb780527dffa1aac">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\classes-cff9627eadc1b07431590c9214a35e5d7bfbb1e7.jar" />
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\classes-25f1e3099d69816f56bda77628cd755fb598b0ed.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-f8b63a63631c037d326b7f8e9bf4e5dde3a8dfee.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\classes-da36455e2f455962cfe3a9e7507ecece29eedf5e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\BorderlessButtons\Application\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-29629981dd952356a56cb4b2a59c7ca74be07a9a.jar" />
     </item>
 
 </items>

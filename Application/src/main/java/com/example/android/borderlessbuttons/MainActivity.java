@@ -99,14 +99,22 @@ public class MainActivity extends ListActivity {
 
             convertView.findViewById(R.id.secondary_action).setOnClickListener(
                     new View.OnClickListener() {
+                        int number = 0;
                         @Override
                         public void onClick(View view) {
 
                             //Toast.makeText(MainActivity.this,
                              //       R.string.touched_secondary_message,
                              //       Toast.LENGTH_SHORT).show();
+
+                            number++;
                             ImageButton btn = (ImageButton)view;
-                            btn.setImageResource(R.drawable.ic_launcher);
+
+                            if (number % 2 == 1)
+                                btn.setImageResource(R.drawable.ic_launcher); //Changes the button to purple thing
+
+                            else
+                                btn.setImageResource(R.drawable.box);
                         }
                     });
             return convertView;
