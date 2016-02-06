@@ -26,6 +26,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 /**
@@ -101,9 +102,11 @@ public class MainActivity extends ListActivity {
                         @Override
                         public void onClick(View view) {
 
-                            Toast.makeText(MainActivity.this,
-                                    R.string.touched_secondary_message,
-                                    Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(MainActivity.this,
+                             //       R.string.touched_secondary_message,
+                             //       Toast.LENGTH_SHORT).show();
+                            ImageButton btn = (ImageButton)view;
+                            btn.setImageResource(R.drawable.ic_launcher);
                         }
                     });
             return convertView;
