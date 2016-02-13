@@ -91,7 +91,10 @@ public class MainActivity extends ListActivity {
                 text.setText("Get so drunk that you vomit.");
             }
             if (position == 2) {
-                text.setText("Poop in a public restaurant.");
+                text.setText("Poop in a public restroom.");
+            }
+            if (position == 3) {
+                text.setText("Do heroine with friends in a Satanist potluck.");
             }
             // Because the list item contains multiple touch targets, you should not override
             // onListItemClick. Instead, set a click listener for each target individually.
