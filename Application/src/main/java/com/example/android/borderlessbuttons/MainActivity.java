@@ -68,7 +68,7 @@ public class MainActivity extends ListActivity {
     private BaseAdapter mListAdapter = new BaseAdapter() {
         @Override
         public int getCount() {
-            return 10;
+            return 20;
         }
 
         @Override
@@ -82,7 +82,7 @@ public class MainActivity extends ListActivity {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup container) {
+        public View getView(final int position, View convertView, ViewGroup container) {
             if (convertView == null) {
                 convertView = getLayoutInflater().inflate(R.layout.list_item, container, false);
             }
@@ -116,7 +116,7 @@ public class MainActivity extends ListActivity {
                             Intent intent = new Intent(MainActivity.this, Info.class);
                             TextView editText = (TextView) findViewById(R.id.text1); //instead of R.id.text1?
                             String message = editText.getText().toString();
-                            intent.putExtra("title", message);
+                            intent.putExtra("RESULT_MESSAGE", message);
                             startActivity(intent);
                         }
                     });
