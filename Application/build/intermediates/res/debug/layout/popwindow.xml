@@ -19,4 +19,4 @@
         android:text="information"
         android:id="@+id/info"
         android:layout_weight="0.09" />
-</LinearLayout><!-- From: file:/C:/Users/Amir/AndroidStudioProjects/BorderlessButtons/Application/src/main/res/layout/popwindow.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Owner/AndroidStudioProjects/BorderlessButtons/Application/src/main/res/layout/popwindow.xml -->

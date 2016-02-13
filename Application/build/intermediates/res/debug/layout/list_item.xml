@@ -68,13 +68,13 @@
 
 
         <TextView style="?android:textAppearanceListItemSmall"
-            android:id="@android:id/text1"
+            android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dummy_title" />
 
         <TextView style="?android:textAppearanceSmall"
-            android:id="@android:id/text2"
+            android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dummy_subtitle" />
@@ -88,4 +88,4 @@
     -->
 
 </LinearLayout>
-<!-- From: file:/C:/Users/Amir/AndroidStudioProjects/BorderlessButtons/Application/src/main/res/layout/list_item.xml -->
+<!-- From: file:/C:/Users/Owner/AndroidStudioProjects/BorderlessButtons/Application/src/main/res/layout/list_item.xml -->

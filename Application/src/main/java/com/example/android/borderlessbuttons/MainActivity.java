@@ -28,6 +28,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -82,7 +83,16 @@ public class MainActivity extends ListActivity {
             if (convertView == null) {
                 convertView = getLayoutInflater().inflate(R.layout.list_item, container, false);
             }
-
+            TextView text = (TextView) convertView.findViewById(R.id.text1);
+            if (position == 0) {
+                text.setText("Streak the lawn");
+            }
+            if (position == 1) {
+                text.setText("Get so drunk that you vomit.");
+            }
+            if (position == 2) {
+                text.setText("Poop in a public restaurant.");
+            }
             // Because the list item contains multiple touch targets, you should not override
             // onListItemClick. Instead, set a click listener for each target individually.
 
