@@ -129,6 +129,16 @@ public class MainActivity extends ListActivity {
                     });
             return convertView;
         }
+        //These two methods disable RecycleView, I think...
+        @Override
+        public int getViewTypeCount() {
+            return getCount();
+        }
+        @Override
+        public int getItemViewType(int position) {
+            return position;
+        }
+
     };
 
     @Override
