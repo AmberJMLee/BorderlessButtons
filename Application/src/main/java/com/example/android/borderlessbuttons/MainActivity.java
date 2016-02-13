@@ -20,6 +20,7 @@ import android.app.ListActivity;
 import android.content.ActivityNotFoundException;
 import android.content.ContentProviderOperation;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -41,7 +42,7 @@ import android.widget.Toast;
  */
 public class MainActivity extends ListActivity {
     public final static String EXTRA_MESSAGE = "Hello.";
-
+    public static final String PREFS_NAME = "PrefsFile";
     private static final Uri DOCS_URI = Uri.parse(
             "http://developer.android.com/design/building-blocks/buttons.html#borderless");
 
@@ -86,9 +87,28 @@ public class MainActivity extends ListActivity {
             if (convertView == null) {
                 convertView = getLayoutInflater().inflate(R.layout.list_item, container, false);
             }
+
+            //Restoring saved data
+            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+            String key = String.valueOf(position);
+            int isDone = settings.getInt(key, 0);
+            ImageButton button = (ImageButton) convertView.findViewById(R.id.secondary_action);
+            if (isDone == 0) {
+                button.setImageResource(R.drawable.box);
+            }
+            else if (isDone == 1) {
+                button.setImageResource(R.drawable.ic_launcher);
+            }
+
+
+
+
+            //Setting the tasks
             TextView text = (TextView) convertView.findViewById(R.id.text1);
+
             if (position == 0) {
                 text.setText("Streak the lawn");
+
             }
             if (position == 1) {
                 text.setText("Get so drunk that you vomit.");
@@ -176,19 +196,25 @@ public class MainActivity extends ListActivity {
                             //Toast.makeText(MainActivity.this,
                              //       R.string.touched_secondary_message,
                              //       Toast.LENGTH_SHORT).show();
+
                             boolean done;
                             number++;
                             ImageButton btn = (ImageButton)view;
+                            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+                            SharedPreferences.Editor editor = settings.edit();
 
                             if (number % 2 == 1) {
                                 done = true;
                                 btn.setImageResource(R.drawable.ic_launcher); //Changes the button to purple thing
+                                editor.putInt(String.valueOf(position), 1);
                             }
                             else{
                                 done = false;
                                 btn.setImageResource(R.drawable.box);
                                 number = 0;
+                                editor.putInt(String.valueOf(position), 0);
                             }
+                            editor.commit();
                         }
                     });
             return convertView;
@@ -224,5 +250,8 @@ public class MainActivity extends ListActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void saveState(View view) {
+
     }
 }
