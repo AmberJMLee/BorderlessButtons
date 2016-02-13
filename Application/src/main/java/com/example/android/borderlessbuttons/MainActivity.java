@@ -98,7 +98,7 @@ public class MainActivity extends ListActivity {
             }
             // Because the list item contains multiple touch targets, you should not override
             // onListItemClick. Instead, set a click listener for each target individually.
-
+/*
             convertView.findViewById(R.id.primary_target).setOnClickListener(
                     new View.OnClickListener() {
                         @Override
@@ -109,11 +109,12 @@ public class MainActivity extends ListActivity {
                                     Toast.LENGTH_SHORT).show();
 
                              * Here I think that we can start the new Activity. Somehow.
-                             */
-                            startActivity(new Intent(MainActivity.this, Info.class));
-                        }
-                    });
 
+
+                            Intent intent = new Intent(MainActivity.this, Description.class);
+                            startActivity(intent);
+                        }
+                    }); */
             convertView.findViewById(R.id.secondary_action).setOnClickListener(
                     new View.OnClickListener() {
 
@@ -173,5 +174,9 @@ public class MainActivity extends ListActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void openDescription(View view) {
+        Intent intent = new Intent(this, Info.class);
+        startActivity(intent);
     }
 }

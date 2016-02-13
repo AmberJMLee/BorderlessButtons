@@ -36,19 +36,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/borderlessbuttons/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4024145">
-              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="178" column="21" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="21" />
               <folding>
-                <element signature="e#3707#4322#0" expanded="true" />
-                <element signature="e#4321#4322#0" expanded="true" />
-                <element signature="e#5612#5613#0" expanded="true" />
-                <element signature="e#5653#5654#0" expanded="true" />
-                <element signature="e#5722#5723#0" expanded="true" />
-                <element signature="e#5761#5762#0" expanded="true" />
+                <element signature="e#5645#5646#0" expanded="true" />
+                <element signature="e#5686#5687#0" expanded="true" />
+                <element signature="e#5755#5756#0" expanded="true" />
+                <element signature="e#5794#5795#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Description.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/borderlessbuttons/Description.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Info.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/borderlessbuttons/Info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.75452715">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="popwindow.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/popwindow.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item_description.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/item_description.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.236842">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,9 +103,22 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5">
-              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+            <state vertical-scroll-proportion="-9.789474">
+              <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <element signature="e#1560#1578#0" expanded="true" />
+                <element signature="e#1876#1894#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1439,7 +1496,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/layout/item_description.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/borderlessbuttons/Description.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/borderlessbuttons/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1497,6 +1557,28 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BorderlessButtons" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1513,6 +1595,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BorderlessButtons" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1792,14 +1892,14 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34558824" sideWeight="0.5021575" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34558824" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34558824" sideWeight="0.4978425" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1836,13 +1936,19 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3707#4322#0" expanded="true" />
-            <element signature="e#4321#4322#0" expanded="true" />
-            <element signature="e#5612#5613#0" expanded="true" />
-            <element signature="e#5653#5654#0" expanded="true" />
-            <element signature="e#5722#5723#0" expanded="true" />
-            <element signature="e#5761#5762#0" expanded="true" />
+            <element signature="e#5645#5646#0" expanded="true" />
+            <element signature="e#5686#5687#0" expanded="true" />
+            <element signature="e#5755#5756#0" expanded="true" />
+            <element signature="e#5794#5795#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/template-styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1851,24 +1957,71 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5">
-          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+        <state vertical-scroll-proportion="-9.789474">
+          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/borderlessbuttons/Description.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/borderlessbuttons/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4024145">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="178" column="21" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="21" />
           <folding>
-            <element signature="e#3707#4322#0" expanded="true" />
-            <element signature="e#4321#4322#0" expanded="true" />
-            <element signature="e#5612#5613#0" expanded="true" />
-            <element signature="e#5653#5654#0" expanded="true" />
-            <element signature="e#5722#5723#0" expanded="true" />
-            <element signature="e#5761#5762#0" expanded="true" />
+            <element signature="e#5645#5646#0" expanded="true" />
+            <element signature="e#5686#5687#0" expanded="true" />
+            <element signature="e#5755#5756#0" expanded="true" />
+            <element signature="e#5794#5795#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#1560#1578#0" expanded="true" />
+            <element signature="e#1876#1894#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/popwindow.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/item_description.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.236842">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/borderlessbuttons/Info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75452715">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
