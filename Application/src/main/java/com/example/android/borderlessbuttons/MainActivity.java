@@ -18,6 +18,7 @@ package com.example.android.borderlessbuttons;
 
 import android.app.ListActivity;
 import android.content.ActivityNotFoundException;
+import android.content.ContentProviderOperation;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -52,7 +53,6 @@ public class MainActivity extends ListActivity {
                 finish();
             }
         });
-
         findViewById(R.id.ok_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,15 +90,21 @@ public class MainActivity extends ListActivity {
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-
+                            /**
                             Toast.makeText(MainActivity.this,
-                                    "Touched this. " + R.id.primary_target,
+                                    "Touched this noise. " + R.id.primary_target,
                                     Toast.LENGTH_SHORT).show();
+
+                             * Here I think that we can start the new Activity. Somehow.
+                             */
+                            startActivity(new Intent(MainActivity.this, Info.class));
                         }
                     });
 
             convertView.findViewById(R.id.secondary_action).setOnClickListener(
                     new View.OnClickListener() {
+
+
                         int number = 0;
                         @Override
                         public void onClick(View view) {
@@ -106,15 +112,19 @@ public class MainActivity extends ListActivity {
                             //Toast.makeText(MainActivity.this,
                              //       R.string.touched_secondary_message,
                              //       Toast.LENGTH_SHORT).show();
-
+                            boolean done;
                             number++;
                             ImageButton btn = (ImageButton)view;
 
-                            if (number % 2 == 1)
+                            if (number % 2 == 1) {
+                                done = true;
                                 btn.setImageResource(R.drawable.ic_launcher); //Changes the button to purple thing
-
-                            else
+                            }
+                            else{
+                                done = false;
                                 btn.setImageResource(R.drawable.box);
+                                number = 0;
+                            }
                         }
                     });
             return convertView;

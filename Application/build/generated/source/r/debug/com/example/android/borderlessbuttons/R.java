@@ -142,16 +142,19 @@ containing a value of this type.
         public static final int tile=0x7f020003;
     }
     public static final class id {
-        public static final int cancel_button=0x7f090002;
-        public static final int docs_link=0x7f090004;
-        public static final int ok_button=0x7f090003;
+        public static final int cancel_button=0x7f090004;
+        public static final int docs_link=0x7f090006;
+        public static final int info=0x7f090003;
+        public static final int ok_button=0x7f090005;
         public static final int primary_target=0x7f090001;
         public static final int secondary_action=0x7f090000;
+        public static final int title=0x7f090002;
     }
     public static final class layout {
         public static final int item_description=0x7f030000;
         public static final int list_item=0x7f030001;
-        public static final int sample_main=0x7f030002;
+        public static final int popwindow=0x7f030002;
+        public static final int sample_main=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f080000;
