@@ -99,6 +99,54 @@ public class MainActivity extends ListActivity {
             if (position == 3) {
                 text.setText("Do heroine with friends in a Satanist potluck.");
             }
+            if (position == 5) {
+                text.setText("Sacrifice a sratstar");
+            }
+            if (position == 6) {
+                text.setText("Go to the homecoming game");
+            }
+            if (position == 7) {
+                text.setText("Eat at the dumpling truck");
+            }
+            if (position == 8) {
+                text.setText("Complain about the food");
+            }
+            if (position == 9) {
+                text.setText("Get food poisoning at the dining halls");
+            }
+            if (position == 10) {
+                text.setText("Pull an all nighter in Clemons");
+            }
+            if (position == 11) {
+                text.setText("Give a hug to Ms.Kathy");
+            }
+            if (position == 12) {
+                text.setText("Pull an all nighter in Clemons");
+            }
+            if (position == 13) {
+                text.setText("Dance at Trinity");
+            }
+            if (position == 14) {
+                text.setText("Go hiking somewhere");
+            }
+            if (position == 15) {
+                text.setText("Handshake with Dean Groves");
+            }
+            if (position == 16) {
+                text.setText("Find a steam tunnel");
+            }
+            if (position == 17) {
+                text.setText("Get an A in a class");
+            }
+            if (position == 18) {
+                text.setText("Build a snowman on the lawn");
+            }
+            if (position == 19) {
+                text.setText("Befriend a grad student");
+            }
+            if (position == 20) {
+                text.setText("Have lunch with a professor");
+            }
             // Because the list item contains multiple touch targets, you should not override
             // onListItemClick. Instead, set a click listener for each target individually.
 
