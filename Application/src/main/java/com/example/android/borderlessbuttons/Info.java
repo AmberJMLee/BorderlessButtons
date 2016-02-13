@@ -14,8 +14,8 @@ public class Info extends Activity{
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
-        int width = dm.widthPixels;
-        int height = dm.heightPixels;
-        getWindow().setLayout((int)(width*1.0), (int)(height*1.0));
+//        int width = dm.widthPixels;
+//        int height = dm.heightPixels;
+//        getWindow().setLayout((int)(width*1.0), (int)(height*1.0));
     }
 }

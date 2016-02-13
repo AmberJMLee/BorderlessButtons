@@ -65,7 +65,7 @@
         android:focusable="true"
         android:gravity="center_vertical"
         android:background="?android:selectableItemBackground"
-        android:onClick="openDescription" >
+        >
 
         <TextView style="?android:textAppearanceListItemSmall"
             android:id="@+id/text1"

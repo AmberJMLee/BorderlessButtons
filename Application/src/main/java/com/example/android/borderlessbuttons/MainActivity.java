@@ -27,6 +27,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,6 +40,8 @@ import android.widget.Toast;
  * borderless buttons</a> at the Android Design guide for a discussion of this visual style.
  */
 public class MainActivity extends ListActivity {
+    public final static String EXTRA_MESSAGE = "Hello.";
+
     private static final Uri DOCS_URI = Uri.parse(
             "http://developer.android.com/design/building-blocks/buttons.html#borderless");
 
@@ -98,7 +101,7 @@ public class MainActivity extends ListActivity {
             }
             // Because the list item contains multiple touch targets, you should not override
             // onListItemClick. Instead, set a click listener for each target individually.
-/*
+
             convertView.findViewById(R.id.primary_target).setOnClickListener(
                     new View.OnClickListener() {
                         @Override
@@ -109,20 +112,19 @@ public class MainActivity extends ListActivity {
                                     Toast.LENGTH_SHORT).show();
 
                              * Here I think that we can start the new Activity. Somehow.
-
-
-                            Intent intent = new Intent(MainActivity.this, Description.class);
+*/
+                            Intent intent = new Intent(MainActivity.this, Info.class);
+                            TextView editText = (TextView) findViewById(R.id.text1); //instead of R.id.text1?
+                            String message = editText.getText().toString();
+                            intent.putExtra("title", message);
                             startActivity(intent);
                         }
-                    }); */
+                    });
             convertView.findViewById(R.id.secondary_action).setOnClickListener(
                     new View.OnClickListener() {
-
-
                         int number = 0;
                         @Override
                         public void onClick(View view) {
-
                             //Toast.makeText(MainActivity.this,
                              //       R.string.touched_secondary_message,
                              //       Toast.LENGTH_SHORT).show();
@@ -174,9 +176,5 @@ public class MainActivity extends ListActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-    public void openDescription(View view) {
-        Intent intent = new Intent(this, Info.class);
-        startActivity(intent);
     }
 }
