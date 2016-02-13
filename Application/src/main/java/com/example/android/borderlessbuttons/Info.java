@@ -19,7 +19,7 @@ public class Info extends Activity{
         Intent intent = getIntent();
         value = intent.getStringExtra("RESULT_MESSAGE");
         TextView display = (TextView) findViewById(R.id.title);
-        display.setText(value);  
+        display.setText(value);
     }
     @Override
     protected void onResume() {
