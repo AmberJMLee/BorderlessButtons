@@ -122,17 +122,19 @@ containing a value of this type.
         public static final int cardview_shadow_start_color=0x7f070003;
     }
     public static final class dimen {
-        public static final int cardview_compat_inset_shadow=0x7f050002;
-        public static final int cardview_default_elevation=0x7f050003;
-        public static final int cardview_default_radius=0x7f050004;
+        public static final int activity_horizontal_margin=0x7f050002;
+        public static final int activity_vertical_margin=0x7f050003;
+        public static final int cardview_compat_inset_shadow=0x7f050004;
+        public static final int cardview_default_elevation=0x7f050005;
+        public static final int cardview_default_radius=0x7f050006;
         public static final int horizontal_page_margin=0x7f050000;
-        public static final int margin_huge=0x7f050005;
-        public static final int margin_large=0x7f050006;
-        public static final int margin_medium=0x7f050007;
-        public static final int margin_small=0x7f050008;
-        public static final int margin_tiny=0x7f050009;
-        public static final int page_margin=0x7f05000a;
-        public static final int standard_touch_target_size=0x7f05000b;
+        public static final int margin_huge=0x7f050007;
+        public static final int margin_large=0x7f050008;
+        public static final int margin_medium=0x7f050009;
+        public static final int margin_small=0x7f05000a;
+        public static final int margin_tiny=0x7f05000b;
+        public static final int page_margin=0x7f05000c;
+        public static final int standard_touch_target_size=0x7f05000d;
         public static final int vertical_page_margin=0x7f050001;
     }
     public static final class drawable {
@@ -154,26 +156,31 @@ containing a value of this type.
         public static final int trisha2=0x7f02000f;
     }
     public static final class id {
-        public static final int cancel_button=0x7f0a000b;
-        public static final int complete=0x7f0a000a;
-        public static final int descr=0x7f0a0001;
-        public static final int detailed_description=0x7f0a0007;
-        public static final int docs_link=0x7f0a000d;
-        public static final int info=0x7f0a0009;
-        public static final int listelement=0x7f0a0000;
-        public static final int ok_button=0x7f0a000c;
-        public static final int primary_target=0x7f0a0003;
-        public static final int secondary_action=0x7f0a0002;
-        public static final int task_completed=0x7f0a0006;
-        public static final int text1=0x7f0a0004;
-        public static final int text2=0x7f0a0005;
-        public static final int title=0x7f0a0008;
+        public static final int cancel_button=0x7f0a000f;
+        public static final int complete=0x7f0a000e;
+        public static final int descr=0x7f0a0005;
+        public static final int detailed_description=0x7f0a000b;
+        public static final int docs_link=0x7f0a0011;
+        public static final int editText=0x7f0a0001;
+        public static final int editText2=0x7f0a0002;
+        public static final int info=0x7f0a000d;
+        public static final int listelement=0x7f0a0004;
+        public static final int new_task_button=0x7f0a0003;
+        public static final int ok_button=0x7f0a0010;
+        public static final int primary_target=0x7f0a0007;
+        public static final int secondary_action=0x7f0a0006;
+        public static final int task_completed=0x7f0a000a;
+        public static final int text1=0x7f0a0008;
+        public static final int text2=0x7f0a0009;
+        public static final int textView=0x7f0a0000;
+        public static final int title=0x7f0a000c;
     }
     public static final class layout {
-        public static final int item_description=0x7f030000;
-        public static final int list_item=0x7f030001;
-        public static final int popwindow=0x7f030002;
-        public static final int sample_main=0x7f030003;
+        public static final int activity_new_task=0x7f030000;
+        public static final int item_description=0x7f030001;
+        public static final int list_item=0x7f030002;
+        public static final int popwindow=0x7f030003;
+        public static final int sample_main=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -192,8 +199,9 @@ containing a value of this type.
         public static final int dummy_title=0x7f080005;
         public static final int intro_message=0x7f080006;
         public static final int ok=0x7f080007;
-        public static final int touched_primary_message=0x7f080008;
-        public static final int touched_secondary_message=0x7f080009;
+        public static final int title_activity_new_task=0x7f080008;
+        public static final int touched_primary_message=0x7f080009;
+        public static final int touched_secondary_message=0x7f08000a;
     }
     public static final class style {
         public static final int AppTheme=0x7f060002;

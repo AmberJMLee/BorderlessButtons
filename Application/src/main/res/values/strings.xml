@@ -27,4 +27,5 @@
     <string name="touched_secondary_message">Touched secondary list item target (delete).</string>
 
     <string name="docs_link_title">Design docs: borderless buttons</string>
+    <string name="title_activity_new_task">NewTask</string>
 </resources>

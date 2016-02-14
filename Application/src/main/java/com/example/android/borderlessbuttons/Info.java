@@ -66,12 +66,44 @@ public class Info extends Activity{
         SharedPreferences.Editor editor = settings.edit();
         Intent intent = new Intent(this, MainActivity.class);
 
+        TextView text = (TextView) findViewById(R.id.complete);
         if (number % 2 == 1) {
-            button.setImageResource(R.drawable.ic_launcher);
-            editor.putInt(String.valueOf(String.valueOf(position)), 1);
 
+            text.setText("TASK COMPLETE! CONGRATULATIONS!");
+            editor.putInt(String.valueOf(String.valueOf(position)), 1);
+            if (position == 0 || position == 11) {
+                button.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
+            }
+            if (position == 1 || position == 12) {
+                button.setImageResource(R.drawable.deandra);
+            }
+            if (position == 2 || position == 13) {
+                button.setImageResource(R.drawable.jenna);
+            }
+            if (position == 3 || position == 14) {
+                button.setImageResource(R.drawable.mckenzie);
+            }
+            if (position == 4 || position == 15) {
+                button.setImageResource(R.drawable.rachel);
+            }
+            if (position == 5 || position == 16) {
+                button.setImageResource(R.drawable.shay);
+            }
+            if (position == 6 || position == 17 || position == 10) {
+                button.setImageResource(R.drawable.taylor);
+            }
+            if (position == 7 || position == 18) {
+                button.setImageResource(R.drawable.trisha);
+            }
+            if (position == 8 || position == 19) {
+                button.setImageResource(R.drawable.trisha2);
+            }
+            if (position == 9 || position == 20) {
+                button.setImageResource(R.drawable.saison);
+            }
         }
         else {
+            text.setText("TASK INCOMPLETE");
             button.setImageResource(R.drawable.box);
             number = 0;
             editor.putInt(String.valueOf(String.valueOf(position)), 0);

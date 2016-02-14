@@ -46,13 +46,21 @@ public class MainActivity extends ListActivity {
 
     public final static String EXTRA_MESSAGE = "Hello.";
     public static final String PREFS_NAME = "PrefsFile";
+    public static final String PREFS_COUNT = "PrefsCount";
     private static final Uri DOCS_URI = Uri.parse(
             "http://developer.android.com/design/building-blocks/buttons.html#borderless");
     private int completed;
     private int positionAltered;
+    public static int count;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sample_main);
+
+
+        SharedPreferences countSettings = getSharedPreferences(PREFS_NAME, 0);
+        int editCountValue = countSettings.getInt("Count", 20);
+        count = editCountValue;
 
         setListAdapter(mListAdapter);
 
@@ -62,12 +70,7 @@ public class MainActivity extends ListActivity {
                 finish();
             }
         });
-        findViewById(R.id.ok_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+
         Intent intent = getIntent();
         completed = intent.getIntExtra("COMPLETED", 0);
 
@@ -82,7 +85,7 @@ public class MainActivity extends ListActivity {
     private BaseAdapter mListAdapter = new BaseAdapter() {
         @Override
         public int getCount() {
-            return 20;
+            return count;
         }
 
         @Override
@@ -140,7 +143,9 @@ public class MainActivity extends ListActivity {
                 if (position == 9 || position == 20) {
                     button.setImageResource(R.drawable.saison);
                 }
+                else {
 
+                }
 //                if(position == positionAltered) {
 //                    if (completed == 1) {
 //                        button.setImageResource(R.drawable.saison);
@@ -265,7 +270,7 @@ public class MainActivity extends ListActivity {
                     });
             convertView.findViewById(R.id.secondary_action).setOnClickListener(
                     new View.OnClickListener() {
-                        int number = 0;
+                        int number = 1;
                         @Override
                         public void onClick(View view) {
                             //Toast.makeText(MainActivity.this,
@@ -368,5 +373,9 @@ public class MainActivity extends ListActivity {
     @Override
     public void onPause() {
         super.onPause();
+    }
+    public void addNewTask(View view) {
+        Intent intent = new Intent(this, NewTask.class);
+        startActivity(intent);
     }
 }
