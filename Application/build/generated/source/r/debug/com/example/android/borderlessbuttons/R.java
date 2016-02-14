@@ -116,48 +116,58 @@ containing a value of this type.
         public static final int contentPaddingTop=0x7f010009;
     }
     public static final class color {
-        public static final int cardview_dark_background=0x7f060000;
-        public static final int cardview_light_background=0x7f060001;
-        public static final int cardview_shadow_end_color=0x7f060002;
-        public static final int cardview_shadow_start_color=0x7f060003;
+        public static final int cardview_dark_background=0x7f070000;
+        public static final int cardview_light_background=0x7f070001;
+        public static final int cardview_shadow_end_color=0x7f070002;
+        public static final int cardview_shadow_start_color=0x7f070003;
     }
     public static final class dimen {
-        public static final int cardview_compat_inset_shadow=0x7f040002;
-        public static final int cardview_default_elevation=0x7f040003;
-        public static final int cardview_default_radius=0x7f040004;
-        public static final int horizontal_page_margin=0x7f040000;
-        public static final int margin_huge=0x7f040005;
-        public static final int margin_large=0x7f040006;
-        public static final int margin_medium=0x7f040007;
-        public static final int margin_small=0x7f040008;
-        public static final int margin_tiny=0x7f040009;
-        public static final int page_margin=0x7f04000a;
-        public static final int standard_touch_target_size=0x7f04000b;
-        public static final int vertical_page_margin=0x7f040001;
+        public static final int cardview_compat_inset_shadow=0x7f050002;
+        public static final int cardview_default_elevation=0x7f050003;
+        public static final int cardview_default_radius=0x7f050004;
+        public static final int horizontal_page_margin=0x7f050000;
+        public static final int margin_huge=0x7f050005;
+        public static final int margin_large=0x7f050006;
+        public static final int margin_medium=0x7f050007;
+        public static final int margin_small=0x7f050008;
+        public static final int margin_tiny=0x7f050009;
+        public static final int page_margin=0x7f05000a;
+        public static final int standard_touch_target_size=0x7f05000b;
+        public static final int vertical_page_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int background=0x7f020000;
         public static final int box=0x7f020001;
-        public static final int ic_action_delete=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int steven=0x7f020004;
-        public static final int tile=0x7f020005;
+        public static final int brittnay=0x7f020002;
+        public static final int deandra=0x7f020003;
+        public static final int ic_action_delete=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int jenna=0x7f020006;
+        public static final int mckenzie=0x7f020007;
+        public static final int rachel=0x7f020008;
+        public static final int saison=0x7f020009;
+        public static final int shay=0x7f02000a;
+        public static final int steven=0x7f02000b;
+        public static final int taylor=0x7f02000c;
+        public static final int tile=0x7f02000d;
+        public static final int trisha=0x7f02000e;
+        public static final int trisha2=0x7f02000f;
     }
     public static final class id {
-        public static final int cancel_button=0x7f09000b;
-        public static final int complete=0x7f09000a;
-        public static final int descr=0x7f090001;
-        public static final int detailed_description=0x7f090007;
-        public static final int docs_link=0x7f09000d;
-        public static final int info=0x7f090009;
-        public static final int listelement=0x7f090000;
-        public static final int ok_button=0x7f09000c;
-        public static final int primary_target=0x7f090003;
-        public static final int secondary_action=0x7f090002;
-        public static final int task_completed=0x7f090006;
-        public static final int text1=0x7f090004;
-        public static final int text2=0x7f090005;
-        public static final int title=0x7f090008;
+        public static final int cancel_button=0x7f0a000b;
+        public static final int complete=0x7f0a000a;
+        public static final int descr=0x7f0a0001;
+        public static final int detailed_description=0x7f0a0007;
+        public static final int docs_link=0x7f0a000d;
+        public static final int info=0x7f0a0009;
+        public static final int listelement=0x7f0a0000;
+        public static final int ok_button=0x7f0a000c;
+        public static final int primary_target=0x7f0a0003;
+        public static final int secondary_action=0x7f0a0002;
+        public static final int task_completed=0x7f0a0006;
+        public static final int text1=0x7f0a0004;
+        public static final int text2=0x7f0a0005;
+        public static final int title=0x7f0a0008;
     }
     public static final class layout {
         public static final int item_description=0x7f030000;
@@ -166,31 +176,36 @@ containing a value of this type.
         public static final int sample_main=0x7f030003;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
+    }
+    public static final class raw {
+        public static final int excuse_me=0x7f040000;
+        public static final int free_hips=0x7f040001;
+        public static final int poop_here=0x7f040002;
     }
     public static final class string {
-        public static final int app_name=0x7f070000;
-        public static final int cancel=0x7f070001;
-        public static final int delete_content_description=0x7f070002;
-        public static final int docs_link_title=0x7f070003;
-        public static final int dummy_subtitle=0x7f070004;
-        public static final int dummy_title=0x7f070005;
-        public static final int intro_message=0x7f070006;
-        public static final int ok=0x7f070007;
-        public static final int touched_primary_message=0x7f070008;
-        public static final int touched_secondary_message=0x7f070009;
+        public static final int app_name=0x7f080000;
+        public static final int cancel=0x7f080001;
+        public static final int delete_content_description=0x7f080002;
+        public static final int docs_link_title=0x7f080003;
+        public static final int dummy_subtitle=0x7f080004;
+        public static final int dummy_title=0x7f080005;
+        public static final int intro_message=0x7f080006;
+        public static final int ok=0x7f080007;
+        public static final int touched_primary_message=0x7f080008;
+        public static final int touched_secondary_message=0x7f080009;
     }
     public static final class style {
-        public static final int AppTheme=0x7f050002;
-        public static final int CardView=0x7f050003;
-        public static final int CardView_Dark=0x7f050004;
-        public static final int CardView_Light=0x7f050005;
-        public static final int Theme_Base=0x7f050001;
-        public static final int Theme_Sample=0x7f050006;
-        public static final int Widget=0x7f050007;
-        public static final int Widget_DescriptionBar=0x7f050008;
-        public static final int Widget_SampleMessage=0x7f050000;
-        public static final int Widget_SampleMessageTile=0x7f050009;
+        public static final int AppTheme=0x7f060002;
+        public static final int CardView=0x7f060003;
+        public static final int CardView_Dark=0x7f060004;
+        public static final int CardView_Light=0x7f060005;
+        public static final int Theme_Base=0x7f060001;
+        public static final int Theme_Sample=0x7f060006;
+        public static final int Widget=0x7f060007;
+        public static final int Widget_DescriptionBar=0x7f060008;
+        public static final int Widget_SampleMessage=0x7f060000;
+        public static final int Widget_SampleMessageTile=0x7f060009;
     }
     public static final class styleable {
         /** Attributes that can be used with a CardView.

@@ -21,6 +21,7 @@ import android.content.ActivityNotFoundException;
 import android.content.ContentProviderOperation;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -41,6 +42,8 @@ import android.widget.Toast;
  * borderless buttons</a> at the Android Design guide for a discussion of this visual style.
  */
 public class MainActivity extends ListActivity {
+    MediaPlayer excuse_me, free_hips, poop_here;
+
     public final static String EXTRA_MESSAGE = "Hello.";
     public static final String PREFS_NAME = "PrefsFile";
     private static final Uri DOCS_URI = Uri.parse(
@@ -64,6 +67,11 @@ public class MainActivity extends ListActivity {
                 finish();
             }
         });
+
+        //Instantiating music
+        excuse_me = MediaPlayer.create(this, R.raw.excuse_me);
+        free_hips = MediaPlayer.create(this, R.raw.free_hips);
+        poop_here = MediaPlayer.create(this, R.raw.poop_here);
     }
 
     private BaseAdapter mListAdapter = new BaseAdapter() {
@@ -97,7 +105,36 @@ public class MainActivity extends ListActivity {
                 button.setImageResource(R.drawable.box);
             }
             else if (isDone == 1) {
-                button.setImageResource(R.drawable.ic_launcher);
+                if (position == 0 || position == 11) {
+                    button.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
+                }
+                if (position == 1 || position == 12) {
+                    button.setImageResource(R.drawable.deandra);
+                }
+                if (position == 2 || position == 13) {
+                    button.setImageResource(R.drawable.jenna);
+                }
+                if (position == 3 || position == 14) {
+                    button.setImageResource(R.drawable.mckenzie);
+                }
+                if (position == 4 || position == 15) {
+                    button.setImageResource(R.drawable.rachel);
+                }
+                if (position == 5 || position == 16) {
+                    button.setImageResource(R.drawable.shay);
+                }
+                if (position == 6 || position == 17 || position == 10) {
+                    button.setImageResource(R.drawable.taylor);
+                }
+                if (position == 7 || position == 18) {
+                    button.setImageResource(R.drawable.trisha);
+                }
+                if (position == 8 || position == 19) {
+                    button.setImageResource(R.drawable.trisha2);
+                }
+                if (position == 9 || position == 20) {
+                    button.setImageResource(R.drawable.saison);
+                }
             }
 
 
@@ -228,13 +265,50 @@ public class MainActivity extends ListActivity {
                             SharedPreferences.Editor editor = settings.edit();
 
                             if (number % 2 == 1) {
-                                done = true;
-                                btn.setImageResource(R.drawable.ic_launcher); //Changes the button to purple thing
-                                editor.putInt(String.valueOf(position), 1);
-
+                                if (position == 0 || position == 11) {
+                                    btn.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
+                                    editor.putInt(String.valueOf(position), 1);
+                                    excuse_me.start();
+                                    excuse_me.setLooping(false);
+                                }
+                                if (position == 1 || position == 12) {
+                                    btn.setImageResource(R.drawable.deandra);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
+                                if (position == 2 || position == 13) {
+                                    btn.setImageResource(R.drawable.jenna);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
+                                if (position == 3 || position == 14) {
+                                    btn.setImageResource(R.drawable.mckenzie);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
+                                if (position == 4 || position == 15) {
+                                    btn.setImageResource(R.drawable.rachel);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
+                                if (position == 5 || position == 16) {
+                                    btn.setImageResource(R.drawable.shay);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
+                                if (position == 6 || position == 17 || position == 10) {
+                                    btn.setImageResource(R.drawable.taylor);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
+                                if (position == 7 || position == 18) {
+                                    btn.setImageResource(R.drawable.trisha);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
+                                if (position == 8 || position == 19) {
+                                    btn.setImageResource(R.drawable.trisha2);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
+                                if (position == 9 || position == 20) {
+                                    btn.setImageResource(R.drawable.saison);
+                                    editor.putInt(String.valueOf(position), 1);
+                                }
                             }
                             else{
-                                done = false;
                                 btn.setImageResource(R.drawable.box);
                                 number = 0;
                                 editor.putInt(String.valueOf(position), 0);
