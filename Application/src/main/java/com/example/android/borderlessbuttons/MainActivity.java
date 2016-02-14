@@ -174,6 +174,7 @@ public class MainActivity extends ListActivity {
             // onListItemClick. Instead, set a click listener for each target individually.
             final Intent intent = new Intent(MainActivity.this, Info.class);
             final TextView editText = (TextView) convertView.findViewById(R.id.text1); //instead of R.id.text1?
+            final TextView information = (TextView) convertView.findViewById(R.id.text2);
 
             convertView.findViewById(R.id.primary_target).setOnClickListener(
                     new View.OnClickListener() {
@@ -186,10 +187,28 @@ public class MainActivity extends ListActivity {
 
                              * Here I think that we can start the new Activity. Somehow.
 */
-
+                            //Description
                             String message = editText.getText().toString();
-                            Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
                             intent.putExtra("RESULT_MESSAGE", message);
+
+                            //Details
+                            String details = information.getText().toString();
+                            intent.putExtra("INFO_MESSAGE", details);
+
+                            //Whether the task is complete or incomplete
+                            String iscomplete = "TASK INCOMPLETE";
+                            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+                            String key = String.valueOf(position);
+                            int isDone = settings.getInt(key, 0);
+                            if (isDone == 1) {
+                                iscomplete = "TASK COMPLETE";
+                            }
+                            intent.putExtra("IS_COMPLETE", iscomplete);
+
+                            //The position so we know which image to use
+                            intent.putExtra("POSITION", position);
+
                             startActivity(intent);
                         }
                     });
@@ -212,6 +231,7 @@ public class MainActivity extends ListActivity {
                                 done = true;
                                 btn.setImageResource(R.drawable.ic_launcher); //Changes the button to purple thing
                                 editor.putInt(String.valueOf(position), 1);
+
                             }
                             else{
                                 done = false;
@@ -256,7 +276,8 @@ public class MainActivity extends ListActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void saveState(View view) {
-
+    @Override
+    public void onPause() {
+        super.onPause();
     }
 }
