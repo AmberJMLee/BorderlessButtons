@@ -51,16 +51,13 @@ public class MainActivity extends ListActivity {
             "http://developer.android.com/design/building-blocks/buttons.html#borderless");
     private int completed;
     private int positionAltered;
-    public static int count;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sample_main);
 
 
-        SharedPreferences countSettings = getSharedPreferences(PREFS_NAME, 0);
-        int editCountValue = countSettings.getInt("Count", 20);
-        count = editCountValue;
+
 
         setListAdapter(mListAdapter);
 
@@ -85,7 +82,10 @@ public class MainActivity extends ListActivity {
     private BaseAdapter mListAdapter = new BaseAdapter() {
         @Override
         public int getCount() {
-            return count;
+
+            SharedPreferences countSettings = getSharedPreferences(PREFS_NAME, 0);
+            int editCountValue = countSettings.getInt("Count", 20);
+            return editCountValue;
         }
 
         @Override

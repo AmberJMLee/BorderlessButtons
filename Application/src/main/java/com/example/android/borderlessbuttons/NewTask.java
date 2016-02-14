@@ -28,7 +28,7 @@ public class NewTask extends Activity {
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         SharedPreferences.Editor editor = settings.edit();
         editor.putInt("Count", settings.getInt("Count", 20) + 1);
-
+        editor.commit();
 
 
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
