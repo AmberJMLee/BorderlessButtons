@@ -42,8 +42,7 @@ import android.widget.Toast;
  * borderless buttons</a> at the Android Design guide for a discussion of this visual style.
  */
 public class MainActivity extends ListActivity {
-    MediaPlayer excuse_me, free_hips, poop_here;
-
+    MediaPlayer excuse_me, free_hips, poop_here, enough, satan, Tania_laugh, mall, yeah;
     public final static String EXTRA_MESSAGE = "Hello.";
     public static final String PREFS_NAME = "PrefsFile";
     public static final String PREFS_COUNT = "PrefsCount";
@@ -77,6 +76,11 @@ public class MainActivity extends ListActivity {
         excuse_me = MediaPlayer.create(this, R.raw.excuse_me);
         free_hips = MediaPlayer.create(this, R.raw.free_hips);
         poop_here = MediaPlayer.create(this, R.raw.poop_here);
+        Tania_laugh = MediaPlayer.create(this, R.raw.Tania_laugh);
+        yeah = MediaPlayer.create(this, R.raw.yeah);
+        satan = MediaPlayer.create(this, R.raw.satan);
+        enough = MediaPlayer.create(this, R.raw.enough);
+        mall = MediaPlayer.create(this, R.raw.mall);
     }
 
     private BaseAdapter mListAdapter = new BaseAdapter() {
@@ -108,41 +112,138 @@ public class MainActivity extends ListActivity {
             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
             String key = String.valueOf(position);
             int isDone = settings.getInt(key, 0);
-            ImageButton button = (ImageButton) convertView.findViewById(R.id.secondary_action);
+            ImageButton btn = (ImageButton) convertView.findViewById(R.id.secondary_action);
             if (isDone == 0) {
-                button.setImageResource(R.drawable.box);
+                btn.setImageResource(R.drawable.box);
             }
             else if (isDone == 1) {
                 if (position == 0 || position == 11) {
-                    button.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
+                    btn.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
+                    editor.putInt(String.valueOf(position), 1);
+                    if(position == 0) {
+                        free_hips.start();
+                        free_hips.setLooping(false);
+                    }
+                    else if(position == 11) {
+                        yeah.start();
+                        yeah.setLooping(false);
+                    }
                 }
                 if (position == 1 || position == 12) {
-                    button.setImageResource(R.drawable.deandra);
+                    btn.setImageResource(R.drawable.deandra);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 1) {
+                        Tania_laugh.start();
+                        Tania_laugh.setLooping(false);
+                    }
+                    else if(position == 12) {
+                        satan.start();
+                        satan.setLooping(false);
+                    }
+
                 }
                 if (position == 2 || position == 13) {
-                    button.setImageResource(R.drawable.jenna);
+                    btn.setImageResource(R.drawable.jenna);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 2) {
+                        poop_here.start();
+                        poop_here.setLooping(false);
+                    }
+                    else if(position == 13) {
+                        yeah.start();
+                        yeah.setLooping(false);
+                    }
                 }
                 if (position == 3 || position == 14) {
-                    button.setImageResource(R.drawable.mckenzie);
+                    btn.setImageResource(R.drawable.mckenzie);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 3) {
+                        satan.start();
+                        satan.setLooping(false);
+                    }
+                    else if(position == 14) {
+                        mall.start();
+                        mall.setLooping(false);
+                    }
                 }
                 if (position == 4 || position == 15) {
-                    button.setImageResource(R.drawable.rachel);
+                    btn.setImageResource(R.drawable.rachel);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 4) {
+                        free_hips.start();
+                        free_hips.setLooping(false);
+                    }
+                    else if(position == 15) {
+                        yeah.start();
+                        yeah.setLooping(false);
+                    }
                 }
                 if (position == 5 || position == 16) {
-                    button.setImageResource(R.drawable.shay);
+                    btn.setImageResource(R.drawable.shay);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 5) {
+                        enough.start();
+                        enough.setLooping(false);
+                    }
+                    else if(position == 16) {
+                        Tania_laugh.start();
+                        Tania_laugh.setLooping(false);
+                    }
                 }
                 if (position == 6 || position == 17 || position == 10) {
-                    button.setImageResource(R.drawable.taylor);
+                    btn.setImageResource(R.drawable.taylor);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 6) {
+                        Tania_laugh.start();
+                        Tania_laugh.setLooping(false);
+                    }
+                    else if(position == 17) {
+                        yeah.start();
+                        yeah.setLooping(false);
+                    }
+                    else if(position == 10) {
+                        satan.start();
+                        satan.setLooping(false);
+                    }
                 }
                 if (position == 7 || position == 18) {
-                    button.setImageResource(R.drawable.trisha);
+                    btn.setImageResource(R.drawable.trisha);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 1) {
+                        yeah.start();
+                        yeah.setLooping(false);
+                    }
+                    else if(position == 18) {
+                        Tania_laugh.start();
+                        Tania_laugh.setLooping(false);
+                    }
                 }
                 if (position == 8 || position == 19) {
-                    button.setImageResource(R.drawable.trisha2);
+                    btn.setImageResource(R.drawable.trisha2);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 8) {
+                        excuse_me.start();
+                        excuse_me.setLooping(false);
+                    }
+                    else if(position == 19) {
+                        yeah.start();
+                        yeah.setLooping(false);
+                    }
                 }
                 if (position == 9 || position == 20) {
-                    button.setImageResource(R.drawable.saison);
+                    btn.setImageResource(R.drawable.saison);
+                    editor.putInt(String.valueOf(position), 1);
+                    if (position == 9) {
+                        poop_here.start();
+                        poop_here.setLooping(false);
+                    }
+                    else if(position == 20) {
+                        Tania_laugh.start();
+                        Tania_laugh.setLooping(false);
+                    }
                 }
+
+
                 else {
 
                 }
