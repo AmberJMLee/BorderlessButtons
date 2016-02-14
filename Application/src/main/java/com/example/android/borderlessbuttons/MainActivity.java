@@ -51,7 +51,8 @@ public class MainActivity extends ListActivity {
             "http://developer.android.com/design/building-blocks/buttons.html#borderless");
     private int completed;
     private int positionAltered;
-
+    public static final String PREFS_TASK = "TasksFile";
+    public static final String PREFS_DESCRIPTION = "Description";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sample_main);
@@ -143,7 +144,15 @@ public class MainActivity extends ListActivity {
                 if (position == 9 || position == 20) {
                     button.setImageResource(R.drawable.saison);
                 }
-                else {
+                if (position > 20) {
+                    SharedPreferences task = getSharedPreferences(PREFS_TASK, 0);
+                    SharedPreferences description = getSharedPreferences(PREFS_DESCRIPTION, 0);
+
+                    TextView task_text = (TextView) convertView.findViewById(R.id.text1);
+                    TextView description_text = (TextView) convertView.findViewById(R.id.text2);
+
+                    task_text.setText(task.getString(String.valueOf(position), "Dummy title"));
+                    description_text.setText(description.getString(String.valueOf(position), "Dummy description"));
 
                 }
 //                if(position == positionAltered) {
