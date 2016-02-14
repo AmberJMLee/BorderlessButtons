@@ -186,9 +186,14 @@ containing a value of this type.
         public static final int main=0x7f090000;
     }
     public static final class raw {
-        public static final int excuse_me=0x7f040000;
-        public static final int free_hips=0x7f040001;
-        public static final int poop_here=0x7f040002;
+        public static final int enough=0x7f040000;
+        public static final int excuse_me=0x7f040001;
+        public static final int free_hips=0x7f040002;
+        public static final int mall=0x7f040003;
+        public static final int poop_here=0x7f040004;
+        public static final int satan=0x7f040005;
+        public static final int tania_laugh=0x7f040006;
+        public static final int yeah=0x7f040007;
     }
     public static final class string {
         public static final int app_name=0x7f080000;

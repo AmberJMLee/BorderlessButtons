@@ -67,9 +67,14 @@ int layout list_item 0x7f030002
 int layout popwindow 0x7f030003
 int layout sample_main 0x7f030004
 int menu main 0x7f090000
-int raw excuse_me 0x7f040000
-int raw free_hips 0x7f040001
-int raw poop_here 0x7f040002
+int raw enough 0x7f040000
+int raw excuse_me 0x7f040001
+int raw free_hips 0x7f040002
+int raw mall 0x7f040003
+int raw poop_here 0x7f040004
+int raw satan 0x7f040005
+int raw tania_laugh 0x7f040006
+int raw yeah 0x7f040007
 int string app_name 0x7f080000
 int string cancel 0x7f080001
 int string delete_content_description 0x7f080002
