@@ -33,7 +33,7 @@
     <TextView style="@style/Widget.DescriptionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/intro_message" />
+        android:text="Welcome. We are the most popular girls in school!" />
 
     <!--
         Remember to use padding on your ListViews to adhere to the standard

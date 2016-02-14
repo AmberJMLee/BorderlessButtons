@@ -119,6 +119,9 @@ public class MainActivity extends ListActivity {
             if (position == 3) {
                 text.setText("Do heroine with friends in a Satanist potluck.");
             }
+            if (position == 4) {
+                text.setText("Give the nerds wedgies");
+            }
             if (position == 5) {
                 text.setText("Sacrifice a sratstar");
             }
@@ -169,6 +172,8 @@ public class MainActivity extends ListActivity {
             }
             // Because the list item contains multiple touch targets, you should not override
             // onListItemClick. Instead, set a click listener for each target individually.
+            final Intent intent = new Intent(MainActivity.this, Info.class);
+            final TextView editText = (TextView) convertView.findViewById(R.id.text1); //instead of R.id.text1?
 
             convertView.findViewById(R.id.primary_target).setOnClickListener(
                     new View.OnClickListener() {
@@ -181,9 +186,9 @@ public class MainActivity extends ListActivity {
 
                              * Here I think that we can start the new Activity. Somehow.
 */
-                            Intent intent = new Intent(MainActivity.this, Info.class);
-                            TextView editText = (TextView) findViewById(R.id.text1); //instead of R.id.text1?
+
                             String message = editText.getText().toString();
+                            Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
                             intent.putExtra("RESULT_MESSAGE", message);
                             startActivity(intent);
                         }
