@@ -48,7 +48,8 @@ public class MainActivity extends ListActivity {
     public static final String PREFS_NAME = "PrefsFile";
     private static final Uri DOCS_URI = Uri.parse(
             "http://developer.android.com/design/building-blocks/buttons.html#borderless");
-
+    private int completed;
+    private int positionAltered;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sample_main);
@@ -67,6 +68,10 @@ public class MainActivity extends ListActivity {
                 finish();
             }
         });
+        Intent intent = getIntent();
+        completed = intent.getIntExtra("COMPLETED", 0);
+
+        positionAltered = intent.getIntExtra("POSITION", 500);
 
         //Instantiating music
         excuse_me = MediaPlayer.create(this, R.raw.excuse_me);
@@ -135,6 +140,15 @@ public class MainActivity extends ListActivity {
                 if (position == 9 || position == 20) {
                     button.setImageResource(R.drawable.saison);
                 }
+
+//                if(position == positionAltered) {
+//                    if (completed == 1) {
+//                        button.setImageResource(R.drawable.saison);
+//                    }
+//                    if (completed == 0) {
+//                        button.setImageResource(R.drawable.trisha2);
+//                    }
+//                }
             }
 
 
@@ -307,6 +321,7 @@ public class MainActivity extends ListActivity {
                                     btn.setImageResource(R.drawable.saison);
                                     editor.putInt(String.valueOf(position), 1);
                                 }
+
                             }
                             else{
                                 btn.setImageResource(R.drawable.box);
