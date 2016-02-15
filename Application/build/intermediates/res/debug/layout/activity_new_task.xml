@@ -33,7 +33,7 @@
         android:id="@+id/new_task_button"
         android:clickable="true"
         android:onClick="addNewTask"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true" />
 
     <Button style="?android:buttonBarButtonStyle"
