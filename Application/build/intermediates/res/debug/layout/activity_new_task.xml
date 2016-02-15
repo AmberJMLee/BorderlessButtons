@@ -46,4 +46,4 @@
         android:clickable="true"
         android:onClick="cancelNewTask"/>
 </RelativeLayout>
-<!-- From: file:/C:/Users/Owner/AndroidStudioProjects/BorderlessButtons/Application/src/main/res/layout/activity_new_task.xml -->
+<!-- From: file:/C:/Users/Amir/AndroidStudioProjects/BorderlessButtons/Application/src/main/res/layout/activity_new_task.xml -->

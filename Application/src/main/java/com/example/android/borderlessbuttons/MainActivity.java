@@ -249,10 +249,12 @@ public class MainActivity extends ListActivity {
                     btn.setImageResource(R.drawable.saison);
                 }
                 if (position > 20) {
-                    if (position % 2 == 0)
+                    if (position % 3 == 0)
                         btn.setImageResource(R.drawable.matt);
-                    if (position % 2 == 1)
+                    if (position % 3 == 1)
                         btn.setImageResource(R.drawable.belinda);
+                    if (position % 3 == 2)
+                        btn.setImageResource(R.drawable.than);
                 }
             }
 /*
@@ -445,8 +447,18 @@ public class MainActivity extends ListActivity {
                                     }
                                 }
                                 if (position > 20) {
-                                    btn.setImageResource(R.drawable.matt);
-                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position % 3 == 0) {
+                                        btn.setImageResource(R.drawable.matt);
+                                        editor.putInt(String.valueOf(position), 1);
+                                    }
+                                    if (position % 3 == 1) {
+                                        btn.setImageResource(R.drawable.belinda);
+                                        editor.putInt(String.valueOf(position), 1);
+                                    }
+                                    if (position % 3 == 2) {
+                                        btn.setImageResource(R.drawable.than);
+                                        editor.putInt(String.valueOf(position), 1);
+                                    }
                                 }
 
                             } else {
