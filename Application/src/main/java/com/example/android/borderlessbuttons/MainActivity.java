@@ -106,9 +106,10 @@ public class MainActivity extends ListActivity {
                 convertView = getLayoutInflater().inflate(R.layout.list_item, container, false);
             }
             TextView text = (TextView) convertView.findViewById(R.id.text1);
-
+            TextView desc = (TextView) convertView.findViewById(R.id.text2);
             if (position == 0) {
                 text.setText("Streak the lawn");
+                desc.setText("");
 
             }
             if (position == 1) {
@@ -279,7 +280,7 @@ public class MainActivity extends ListActivity {
                     });
             convertView.findViewById(R.id.secondary_action).setOnClickListener(
                     new View.OnClickListener() {
-                        int number = 1;
+                        int number = 0;
 
                         @Override
                         public void onClick(View view) {
@@ -288,12 +289,12 @@ public class MainActivity extends ListActivity {
                             //       Toast.LENGTH_SHORT).show();
 
                             boolean done;
-                            number++;
                             ImageButton btn = (ImageButton) view;
                             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
                             SharedPreferences.Editor editor = settings.edit();
 
-                            if (number % 2 == 1) {
+                            if (number == 0) {
+                                number = 1;
                                 if (position == 0 || position == 11) {
                                     btn.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
                                     editor.putInt(String.valueOf(position), 1);
