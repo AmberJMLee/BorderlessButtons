@@ -172,7 +172,17 @@ public class MainActivity extends ListActivity {
             if (position == 20) {
                 text.setText("Have lunch with a professor");
             }
-            //Restoring saved data
+            for (int i = 21; i < getCount(); i++)
+            {
+                if (position == i) {
+                    SharedPreferences task = getSharedPreferences(PREFS_TASK, 0);
+                    SharedPreferences description = getSharedPreferences(PREFS_DESCRIPTION, 0);
+
+                    text.setText(task.getString(String.valueOf(position), "Dummy title"));
+                    desc.setText(description.getString(String.valueOf(position), "Dummy description"));
+                }
+            }
+                //Restoring saved data
             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
 //            SharedPreferences.Editor editor = settings.edit();
             String key = String.valueOf(position);
@@ -212,17 +222,11 @@ public class MainActivity extends ListActivity {
                 if (position == 9 || position == 20) {
                     btn.setImageResource(R.drawable.saison);
                 }
+                if (position > 20) {
+                    btn.setImageResource(R.drawable.matt);
+                }
             }
-/*                if (position > 20) {
-                    SharedPreferences task = getSharedPreferences(PREFS_TASK, 0);
-                    SharedPreferences description = getSharedPreferences(PREFS_DESCRIPTION, 0);
-
-                    TextView task_text = (TextView) convertView.findViewById(R.id.text1);
-                    TextView description_text = (TextView) convertView.findViewById(R.id.text2);
-
-                    task_text.setText(task.getString(String.valueOf(position), "Dummy title"));
-                    description_text.setText(description.getString(String.valueOf(position), "Dummy description"));
-
+/*
 
 //                if(position == positionAltered) {
 //                    if (completed == 1) {
@@ -292,8 +296,8 @@ public class MainActivity extends ListActivity {
                             ImageButton btn = (ImageButton) view;
                             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
                             SharedPreferences.Editor editor = settings.edit();
-
-                            if (number == 0) {
+                            int isDone = settings.getInt(String.valueOf(position), 0);
+                            if (isDone == 0) {
                                 number = 1;
                                 if (position == 0 || position == 11) {
                                     btn.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
@@ -410,6 +414,10 @@ public class MainActivity extends ListActivity {
                                         Tania_laugh.start();
                                         Tania_laugh.setLooping(false);
                                     }
+                                }
+                                if (position > 20) {
+                                    btn.setImageResource(R.drawable.matt);
+                                    editor.putInt(String.valueOf(position), 1);
                                 }
 
                             } else {

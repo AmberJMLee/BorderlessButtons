@@ -22,8 +22,6 @@ public class NewTask extends Activity {
         String newTaskString = newTask.getText().toString();
         EditText newDetails = (EditText) findViewById(R.id.editText2);
         String newDetailsString = newDetails.getText().toString();
-        a.putExtra("NEW_TASK", newTaskString);
-        a.putExtra("NEW_DETAILS", newDetailsString);
 
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         SharedPreferences.Editor editor = settings.edit();
