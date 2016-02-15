@@ -249,7 +249,10 @@ public class MainActivity extends ListActivity {
                     btn.setImageResource(R.drawable.saison);
                 }
                 if (position > 20) {
-                    btn.setImageResource(R.drawable.matt);
+                    if (position % 2 == 0)
+                        btn.setImageResource(R.drawable.matt);
+                    if (position % 2 == 1)
+                        btn.setImageResource(R.drawable.belinda);
                 }
             }
 /*
