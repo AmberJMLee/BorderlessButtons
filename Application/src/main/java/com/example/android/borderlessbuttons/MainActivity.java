@@ -109,68 +109,87 @@ public class MainActivity extends ListActivity {
             TextView desc = (TextView) convertView.findViewById(R.id.text2);
             if (position == 0) {
                 text.setText("Streak the lawn");
-                desc.setText("");
-
+                desc.setText("Everybody knows that as a student, it’s a tradition to shake what your mother gave you across the sacred grounds of the lawn. Let Thomas Jefferson know that you go here by showing off the unholy to the holy.");
             }
             if (position == 1) {
                 text.setText("Get so drunk that you vomit.");
+                desc.setText("Partying so hard that you lose control of yourself is so hip. What other way to show that by giving what you got?\\nDisclaimer: If you don’t drink- then you’re a square. However, not all hope is lost. You can fake it till you make it.”");
             }
             if (position == 2) {
                 text.setText("Poop in a public restroom.");
+                desc.setText("You know that you’re not going to be home all the time. And nature calls whenever you’re not ready. Brace for it by heading to your local library’s bathroom.");
             }
             if (position == 3) {
                 text.setText("Do heroine with friends in a Satanist potluck.");
+                desc.setText("What are you doing if you’re not trying new things? This is college!! Have some fun!!");
             }
             if (position == 4) {
                 text.setText("Give the nerds wedgies");
+                desc.setText("In this world; it’s bully or get bullied. The coporate world will be your prime example if you’re not ready.\nIf you’re a ‘’nerd’’ do yourself a solid.");
             }
             if (position == 5) {
                 text.setText("Sacrifice a sratstar");
+                desc.setText("’Sacrifice’ is up for interpretation, based on how you feel fit. Don’t sue me if you break the law");
             }
             if (position == 6) {
                 text.setText("Go to the homecoming game");
+                desc.setText("Yay, football! Yay, cute boys/butts!!! You can tell what I stand for");
             }
             if (position == 7) {
                 text.setText("Eat at the dumpling truck");
+                desc.setText("Pie guy, who?”");
             }
             if (position == 8) {
                 text.setText("Complain about the food");
+                desc.setText("This applies to dining hall. Choose one, several, or all- the choice is up to you.");
             }
             if (position == 9) {
                 text.setText("Get food poisoning at the dining halls");
+                desc.setText("This applies to dining hall. Choose one, several, or all- the choice is up to you");
             }
             if (position == 10) {
                 text.setText("Pull an all nighter in Clemons");
+                desc.setText("It doesn’t have to be for class. You could be marathoning Barney, for all I care.");
             }
             if (position == 11) {
                 text.setText("Give a hug to Ms.Kathy");
+                desc.setText("A true cinnamon roll. So good. So pure.");
             }
             if (position == 12) {
-                text.setText("Pull an all nighter in Clemons");
+                text.setText("Go to all four gyms");
+                desc.setText("Then you've worked out at least four times!");
             }
             if (position == 13) {
                 text.setText("Dance at Trinity");
+                desc.setText("Knowing you- it’s better if you don’t.");
             }
             if (position == 14) {
                 text.setText("Go hiking somewhere");
+                desc.setText("Preferably a place far away. Like the alps! Go! Have fun!!");
             }
             if (position == 15) {
                 text.setText("Handshake with Dean Groves");
+                desc.setText("Another cinnamon roll. I hear that if you look into his eyes, you get forgiven of whatever gross sins you’ve done.");
             }
             if (position == 16) {
                 text.setText("Find a steam tunnel");
+                desc.setText("but don’t enter it! Because that’s illegal and I don’t condone breaking the law. *winks*");
             }
             if (position == 17) {
                 text.setText("Get an A in a class");
+                desc.setText("This is for your own good.");
             }
             if (position == 18) {
                 text.setText("Build a snowman on the lawn");
+                desc.setText("It’s fun! I guess. It’s one way to beat the time. We all know you should be studying.");
             }
             if (position == 19) {
                 text.setText("Befriend a grad student");
+                desc.setText("Having friends is fun!");
             }
             if (position == 20) {
                 text.setText("Have lunch with a professor");
+                desc.setText("Who knows, maybe they’ll pay!");
             }
             for (int i = 20; i < getCount(); i++)
             {
