@@ -5,26 +5,19 @@
     android:layout_height="match_parent"
     android:showDividers="middle"
 >
-    <ImageButton android:id="@+id/task_completed"
-        android:layout_width="@dimen/standard_touch_target_size"
-        android:layout_height="@dimen/standard_touch_target_size"
-        android:src="@drawable/box"
-        android:contentDescription="@string/delete_content_description"
-        android:clickable="true"
-        android:onClick="setCompleteStatus"/>
 
     <LinearLayout android:id="@+id/detailed_description"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:paddingLeft="?android:listPreferredItemPaddingLeft"
         android:paddingRight="?android:listPreferredItemPaddingRight"
         android:clickable="true"
         android:focusable="true"
-        android:gravity="center_vertical"
+        android:gravity="center_vertical|center"
         android:background="?android:selectableItemBackground"
-        >
+        android:padding="0.15dp">
+
         <TextView
 
             android:layout_width="wrap_content"
@@ -32,7 +25,9 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Title"
             android:id="@+id/title"
-            android:layout_weight="0.09" />
+            android:layout_weight="0.09"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,7 +35,15 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="information"
             android:id="@+id/info"
-            android:layout_weight="0.09" />
+            android:layout_weight="0.03" />
+
+        <ImageButton android:id="@+id/task_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/box"
+            android:contentDescription="@string/delete_content_description"
+            android:clickable="true"
+            android:onClick="setCompleteStatus" />
 
         <TextView
 
@@ -50,6 +53,7 @@
             android:text="Title"
             android:id="@+id/complete"
             android:layout_weight="0.09" />
+
     </LinearLayout>
 
 </LinearLayout>
