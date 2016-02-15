@@ -43,4 +43,9 @@ public class NewTask extends Activity {
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
     }
+    public void cancelNewTask(View view) {
+        Intent a = new Intent(this, MainActivity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+    }
 }

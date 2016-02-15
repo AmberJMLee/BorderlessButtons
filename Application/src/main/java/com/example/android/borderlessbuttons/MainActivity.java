@@ -172,7 +172,7 @@ public class MainActivity extends ListActivity {
             if (position == 20) {
                 text.setText("Have lunch with a professor");
             }
-            for (int i = 21; i < getCount(); i++)
+            for (int i = 20; i < getCount(); i++)
             {
                 if (position == i) {
                     SharedPreferences task = getSharedPreferences(PREFS_TASK, 0);

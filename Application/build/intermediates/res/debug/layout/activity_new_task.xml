@@ -26,14 +26,24 @@
         android:layout_below="@+id/editText"
         android:layout_marginTop="45dp" />
 
-    <Button
+    <Button style="?android:buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add new task"
         android:id="@+id/new_task_button"
         android:clickable="true"
         android:onClick="addNewTask"
-        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button style="?android:buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/dont_save"
+        android:layout_below="@+id/new_task_button"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="cancelNewTask"/>
 </RelativeLayout>
 <!-- From: file:/C:/Users/Owner/AndroidStudioProjects/BorderlessButtons/Application/src/main/res/layout/activity_new_task.xml -->

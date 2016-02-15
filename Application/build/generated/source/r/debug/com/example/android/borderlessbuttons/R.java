@@ -157,24 +157,26 @@ containing a value of this type.
         public static final int trisha2=0x7f020010;
     }
     public static final class id {
-        public static final int cancel_button=0x7f0a000f;
-        public static final int complete=0x7f0a000e;
-        public static final int descr=0x7f0a0005;
-        public static final int detailed_description=0x7f0a000a;
-        public static final int docs_link=0x7f0a0011;
+        public static final int cancel_button=0x7f0a0011;
+        public static final int complete=0x7f0a000f;
+        public static final int descr=0x7f0a0006;
+        public static final int detailed_description=0x7f0a000b;
+        public static final int docs_link=0x7f0a0013;
+        public static final int dont_save=0x7f0a0004;
         public static final int editText=0x7f0a0001;
         public static final int editText2=0x7f0a0002;
-        public static final int info=0x7f0a000c;
-        public static final int listelement=0x7f0a0004;
+        public static final int info=0x7f0a000d;
+        public static final int listelement=0x7f0a0005;
         public static final int new_task_button=0x7f0a0003;
-        public static final int ok_button=0x7f0a0010;
-        public static final int primary_target=0x7f0a0007;
-        public static final int secondary_action=0x7f0a0006;
-        public static final int task_completed=0x7f0a000d;
-        public static final int text1=0x7f0a0008;
-        public static final int text2=0x7f0a0009;
+        public static final int ok_button=0x7f0a0012;
+        public static final int primary_target=0x7f0a0008;
+        public static final int save_entry=0x7f0a0010;
+        public static final int secondary_action=0x7f0a0007;
+        public static final int task_completed=0x7f0a000e;
+        public static final int text1=0x7f0a0009;
+        public static final int text2=0x7f0a000a;
         public static final int textView=0x7f0a0000;
-        public static final int title=0x7f0a000b;
+        public static final int title=0x7f0a000c;
     }
     public static final class layout {
         public static final int activity_new_task=0x7f030000;

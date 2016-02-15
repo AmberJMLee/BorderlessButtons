@@ -54,6 +54,16 @@
             android:id="@+id/complete"
             android:layout_weight="0.09" />
 
+        <Button style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to list"
+            android:id="@+id/save_entry"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.02"
+            android:clickable="true"
+            android:onClick="saveEntry"/>
+
     </LinearLayout>
 
 </LinearLayout>
