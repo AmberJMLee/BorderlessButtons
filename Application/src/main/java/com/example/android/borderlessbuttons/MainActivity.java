@@ -187,10 +187,6 @@ public class MainActivity extends ListActivity {
                 text.setText("Befriend a grad student");
                 desc.setText("Having friends is fun!");
             }
-            if (position == 20) {
-                text.setText("Have lunch with a professor");
-                desc.setText("Who knows, maybe they’ll pay!");
-            }
             for (int i = 20; i < getCount(); i++)
             {
                 if (position == i) {
