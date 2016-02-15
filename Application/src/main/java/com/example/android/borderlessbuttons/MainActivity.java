@@ -42,7 +42,7 @@ import android.widget.Toast;
  * borderless buttons</a> at the Android Design guide for a discussion of this visual style.
  */
 public class MainActivity extends ListActivity {
-    MediaPlayer excuse_me, free_hips, poop_here, enough, satan, Tania_laugh, mall, yeah;
+    MediaPlayer excuse_me, free_hips, poop_here, enough, satan, tania_laugh, mall, yeah;
     public final static String EXTRA_MESSAGE = "Hello.";
     public static final String PREFS_NAME = "PrefsFile";
     public static final String PREFS_COUNT = "PrefsCount";
@@ -74,7 +74,7 @@ public class MainActivity extends ListActivity {
         excuse_me = MediaPlayer.create(this, R.raw.excuse_me);
         free_hips = MediaPlayer.create(this, R.raw.free_hips);
         poop_here = MediaPlayer.create(this, R.raw.poop_here);
-        Tania_laugh = MediaPlayer.create(this, R.raw.tania_laugh);
+        tania_laugh = MediaPlayer.create(this, R.raw.tania_laugh);
         yeah = MediaPlayer.create(this, R.raw.yeah);
         satan = MediaPlayer.create(this, R.raw.satan);
         enough = MediaPlayer.create(this, R.raw.enough);
@@ -348,8 +348,8 @@ public class MainActivity extends ListActivity {
                                     btn.setImageResource(R.drawable.deandra);
                                     editor.putInt(String.valueOf(position), 1);
                                     if (position == 1) {
-                                        Tania_laugh.start();
-                                        Tania_laugh.setLooping(false);
+                                        tania_laugh.start();
+                                        tania_laugh.setLooping(false);
                                     } else if (position == 12) {
                                         satan.start();
                                         satan.setLooping(false);
@@ -395,16 +395,16 @@ public class MainActivity extends ListActivity {
                                         enough.start();
                                         enough.setLooping(false);
                                     } else if (position == 16) {
-                                        Tania_laugh.start();
-                                        Tania_laugh.setLooping(false);
+                                        tania_laugh.start();
+                                        tania_laugh.setLooping(false);
                                     }
                                 }
                                 if (position == 6 || position == 17 || position == 10) {
                                     btn.setImageResource(R.drawable.taylor);
                                     editor.putInt(String.valueOf(position), 1);
                                     if (position == 6) {
-                                        Tania_laugh.start();
-                                        Tania_laugh.setLooping(false);
+                                        tania_laugh.start();
+                                        tania_laugh.setLooping(false);
                                     } else if (position == 17) {
                                         yeah.start();
                                         yeah.setLooping(false);
@@ -420,8 +420,8 @@ public class MainActivity extends ListActivity {
                                         yeah.start();
                                         yeah.setLooping(false);
                                     } else if (position == 18) {
-                                        Tania_laugh.start();
-                                        Tania_laugh.setLooping(false);
+                                        tania_laugh.start();
+                                        tania_laugh.setLooping(false);
                                     }
                                 }
                                 if (position == 8 || position == 19) {
@@ -442,22 +442,28 @@ public class MainActivity extends ListActivity {
                                         poop_here.start();
                                         poop_here.setLooping(false);
                                     } else if (position == 20) {
-                                        Tania_laugh.start();
-                                        Tania_laugh.setLooping(false);
+                                        tania_laugh.start();
+                                        tania_laugh.setLooping(false);
                                     }
                                 }
                                 if (position > 20) {
                                     if (position % 3 == 0) {
                                         btn.setImageResource(R.drawable.matt);
                                         editor.putInt(String.valueOf(position), 1);
+                                        satan.start();
+                                        satan.setLooping(false);
                                     }
                                     if (position % 3 == 1) {
                                         btn.setImageResource(R.drawable.belinda);
                                         editor.putInt(String.valueOf(position), 1);
+                                        excuse_me.start();
+                                        excuse_me.setLooping(false);
                                     }
                                     if (position % 3 == 2) {
                                         btn.setImageResource(R.drawable.than);
                                         editor.putInt(String.valueOf(position), 1);
+                                        poop_here.start();
+                                        poop_here.setLooping(false);
                                     }
                                 }
 
