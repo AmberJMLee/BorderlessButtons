@@ -16,7 +16,9 @@
         android:focusable="true"
         android:gravity="center_vertical|center"
         android:background="?android:selectableItemBackground"
-        android:padding="0.15dp">
+        android:padding="0.45dp"
+        android:layout_margin="0.30dp"
+        android:layout_marginLeft="50dp">
 
         <TextView
 
