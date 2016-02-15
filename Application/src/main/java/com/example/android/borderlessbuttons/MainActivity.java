@@ -56,9 +56,6 @@ public class MainActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sample_main);
 
-
-
-
         setListAdapter(mListAdapter);
 
         findViewById(R.id.cancel_button).setOnClickListener(new View.OnClickListener() {
@@ -120,117 +117,34 @@ public class MainActivity extends ListActivity {
             } else if (isDone == 1) {
                 if (position == 0 || position == 11) {
                     btn.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 0) {
-                        free_hips.start();
-                        free_hips.setLooping(false);
-                    } else if (position == 11) {
-                        yeah.start();
-                        yeah.setLooping(false);
-                    }
                 }
                 if (position == 1 || position == 12) {
                     btn.setImageResource(R.drawable.deandra);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 1) {
-                        Tania_laugh.start();
-                        Tania_laugh.setLooping(false);
-                    } else if (position == 12) {
-                        satan.start();
-                        satan.setLooping(false);
-                    }
-
                 }
                 if (position == 2 || position == 13) {
                     btn.setImageResource(R.drawable.jenna);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 2) {
-                        poop_here.start();
-                        poop_here.setLooping(false);
-                    } else if (position == 13) {
-                        yeah.start();
-                        yeah.setLooping(false);
-                    }
                 }
                 if (position == 3 || position == 14) {
                     btn.setImageResource(R.drawable.mckenzie);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 3) {
-                        satan.start();
-                        satan.setLooping(false);
-                    } else if (position == 14) {
-                        mall.start();
-                        mall.setLooping(false);
-                    }
                 }
                 if (position == 4 || position == 15) {
                     btn.setImageResource(R.drawable.rachel);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 4) {
-                        free_hips.start();
-                        free_hips.setLooping(false);
-                    } else if (position == 15) {
-                        yeah.start();
-                        yeah.setLooping(false);
-                    }
                 }
                 if (position == 5 || position == 16) {
                     btn.setImageResource(R.drawable.shay);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 5) {
-                        enough.start();
-                        enough.setLooping(false);
-                    } else if (position == 16) {
-                        Tania_laugh.start();
-                        Tania_laugh.setLooping(false);
-                    }
                 }
                 if (position == 6 || position == 17 || position == 10) {
                     btn.setImageResource(R.drawable.taylor);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 6) {
-                        Tania_laugh.start();
-                        Tania_laugh.setLooping(false);
-                    } else if (position == 17) {
-                        yeah.start();
-                        yeah.setLooping(false);
-                    } else if (position == 10) {
-                        satan.start();
-                        satan.setLooping(false);
-                    }
                 }
                 if (position == 7 || position == 18) {
                     btn.setImageResource(R.drawable.trisha);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 1) {
-                        yeah.start();
-                        yeah.setLooping(false);
-                    } else if (position == 18) {
-                        Tania_laugh.start();
-                        Tania_laugh.setLooping(false);
-                    }
                 }
                 if (position == 8 || position == 19) {
                     btn.setImageResource(R.drawable.trisha2);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 8) {
-                        excuse_me.start();
-                        excuse_me.setLooping(false);
-                    } else if (position == 19) {
-                        yeah.start();
-                        yeah.setLooping(false);
-                    }
+
                 }
                 if (position == 9 || position == 20) {
                     btn.setImageResource(R.drawable.saison);
-                    editor.putInt(String.valueOf(position), 1);
-                    if (position == 9) {
-                        poop_here.start();
-                        poop_here.setLooping(false);
-                    } else if (position == 20) {
-                        Tania_laugh.start();
-                        Tania_laugh.setLooping(false);
-                    }
                 }
 
                 if (position > 20) {
@@ -253,7 +167,6 @@ public class MainActivity extends ListActivity {
 //                    }
 //                }
                 }
-
 
                 //Setting the tasks
                 TextView text = (TextView) convertView.findViewById(R.id.text1);
@@ -384,44 +297,118 @@ public class MainActivity extends ListActivity {
                                     if (position == 0 || position == 11) {
                                         btn.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
                                         editor.putInt(String.valueOf(position), 1);
-                                        excuse_me.start();
-                                        excuse_me.setLooping(false);
+                                        //excuse_me.start();
+                                        //excuse_me.setLooping(false);
+                                        editor.putInt(String.valueOf(position), 1);
+                                        if (position == 0) {
+                                            free_hips.start();
+                                            free_hips.setLooping(false);
+                                        } else if (position == 11) {
+                                            yeah.start();
+                                            yeah.setLooping(false);
+                                        }
                                     }
                                     if (position == 1 || position == 12) {
                                         btn.setImageResource(R.drawable.deandra);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 1) {
+                                            Tania_laugh.start();
+                                            Tania_laugh.setLooping(false);
+                                        } else if (position == 12) {
+                                            satan.start();
+                                            satan.setLooping(false);
+                                        }
                                     }
                                     if (position == 2 || position == 13) {
                                         btn.setImageResource(R.drawable.jenna);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 2) {
+                                            poop_here.start();
+                                            poop_here.setLooping(false);
+                                        } else if (position == 13) {
+                                            yeah.start();
+                                            yeah.setLooping(false);
+                                        }
                                     }
                                     if (position == 3 || position == 14) {
                                         btn.setImageResource(R.drawable.mckenzie);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 3) {
+                                            satan.start();
+                                            satan.setLooping(false);
+                                        } else if (position == 14) {
+                                            mall.start();
+                                            mall.setLooping(false);
+                                        }
                                     }
                                     if (position == 4 || position == 15) {
                                         btn.setImageResource(R.drawable.rachel);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 4) {
+                                            free_hips.start();
+                                            free_hips.setLooping(false);
+                                        } else if (position == 15) {
+                                            yeah.start();
+                                            yeah.setLooping(false);
+                                        }
                                     }
                                     if (position == 5 || position == 16) {
                                         btn.setImageResource(R.drawable.shay);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 5) {
+                                            enough.start();
+                                            enough.setLooping(false);
+                                        } else if (position == 16) {
+                                            Tania_laugh.start();
+                                            Tania_laugh.setLooping(false);
+                                        }
                                     }
                                     if (position == 6 || position == 17 || position == 10) {
                                         btn.setImageResource(R.drawable.taylor);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 6) {
+                                            Tania_laugh.start();
+                                            Tania_laugh.setLooping(false);
+                                        } else if (position == 17) {
+                                            yeah.start();
+                                            yeah.setLooping(false);
+                                        } else if (position == 10) {
+                                            satan.start();
+                                            satan.setLooping(false);
+                                        }
                                     }
                                     if (position == 7 || position == 18) {
                                         btn.setImageResource(R.drawable.trisha);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 1) {
+                                            yeah.start();
+                                            yeah.setLooping(false);
+                                        } else if (position == 18) {
+                                            Tania_laugh.start();
+                                            Tania_laugh.setLooping(false);
+                                        }
                                     }
                                     if (position == 8 || position == 19) {
                                         btn.setImageResource(R.drawable.trisha2);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 8) {
+                                            excuse_me.start();
+                                            excuse_me.setLooping(false);
+                                        } else if (position == 19) {
+                                            yeah.start();
+                                            yeah.setLooping(false);
+                                        }
                                     }
                                     if (position == 9 || position == 20) {
                                         btn.setImageResource(R.drawable.saison);
                                         editor.putInt(String.valueOf(position), 1);
+                                        if (position == 9) {
+                                            poop_here.start();
+                                            poop_here.setLooping(false);
+                                        } else if (position == 20) {
+                                            Tania_laugh.start();
+                                            Tania_laugh.setLooping(false);
+                                        }
                                     }
 
                                 } else {
