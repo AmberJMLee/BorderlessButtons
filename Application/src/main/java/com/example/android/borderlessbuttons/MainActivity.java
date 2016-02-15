@@ -105,10 +105,75 @@ public class MainActivity extends ListActivity {
             if (convertView == null) {
                 convertView = getLayoutInflater().inflate(R.layout.list_item, container, false);
             }
+            TextView text = (TextView) convertView.findViewById(R.id.text1);
 
+            if (position == 0) {
+                text.setText("Streak the lawn");
+
+            }
+            if (position == 1) {
+                text.setText("Get so drunk that you vomit.");
+            }
+            if (position == 2) {
+                text.setText("Poop in a public restroom.");
+            }
+            if (position == 3) {
+                text.setText("Do heroine with friends in a Satanist potluck.");
+            }
+            if (position == 4) {
+                text.setText("Give the nerds wedgies");
+            }
+            if (position == 5) {
+                text.setText("Sacrifice a sratstar");
+            }
+            if (position == 6) {
+                text.setText("Go to the homecoming game");
+            }
+            if (position == 7) {
+                text.setText("Eat at the dumpling truck");
+            }
+            if (position == 8) {
+                text.setText("Complain about the food");
+            }
+            if (position == 9) {
+                text.setText("Get food poisoning at the dining halls");
+            }
+            if (position == 10) {
+                text.setText("Pull an all nighter in Clemons");
+            }
+            if (position == 11) {
+                text.setText("Give a hug to Ms.Kathy");
+            }
+            if (position == 12) {
+                text.setText("Pull an all nighter in Clemons");
+            }
+            if (position == 13) {
+                text.setText("Dance at Trinity");
+            }
+            if (position == 14) {
+                text.setText("Go hiking somewhere");
+            }
+            if (position == 15) {
+                text.setText("Handshake with Dean Groves");
+            }
+            if (position == 16) {
+                text.setText("Find a steam tunnel");
+            }
+            if (position == 17) {
+                text.setText("Get an A in a class");
+            }
+            if (position == 18) {
+                text.setText("Build a snowman on the lawn");
+            }
+            if (position == 19) {
+                text.setText("Befriend a grad student");
+            }
+            if (position == 20) {
+                text.setText("Have lunch with a professor");
+            }
             //Restoring saved data
             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-            SharedPreferences.Editor editor = settings.edit();
+//            SharedPreferences.Editor editor = settings.edit();
             String key = String.valueOf(position);
             int isDone = settings.getInt(key, 0);
             ImageButton btn = (ImageButton) convertView.findViewById(R.id.secondary_action);
@@ -146,8 +211,8 @@ public class MainActivity extends ListActivity {
                 if (position == 9 || position == 20) {
                     btn.setImageResource(R.drawable.saison);
                 }
-
-                if (position > 20) {
+            }
+/*                if (position > 20) {
                     SharedPreferences task = getSharedPreferences(PREFS_TASK, 0);
                     SharedPreferences description = getSharedPreferences(PREFS_DESCRIPTION, 0);
 
@@ -167,262 +232,198 @@ public class MainActivity extends ListActivity {
 //                    }
 //                }
                 }
+*/
+            //Setting the tasks
 
-                //Setting the tasks
-                TextView text = (TextView) convertView.findViewById(R.id.text1);
+            // Because the list item contains multiple touch targets, you should not override
+            // onListItemClick. Instead, set a click listener for each target individually.
+            final Intent intent = new Intent(MainActivity.this, Info.class);
+            final TextView editText = (TextView) convertView.findViewById(R.id.text1); //instead of R.id.text1?
+            final TextView information = (TextView) convertView.findViewById(R.id.text2);
 
-                if (position == 0) {
-                    text.setText("Streak the lawn");
+            convertView.findViewById(R.id.primary_target).setOnClickListener(
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            /**
+                             Toast.makeText(MainActivity.this,
+                             "Touched this noise. " + R.id.primary_target,
+                             Toast.LENGTH_SHORT).show();
 
-                }
-                if (position == 1) {
-                    text.setText("Get so drunk that you vomit.");
-                }
-                if (position == 2) {
-                    text.setText("Poop in a public restroom.");
-                }
-                if (position == 3) {
-                    text.setText("Do heroine with friends in a Satanist potluck.");
-                }
-                if (position == 4) {
-                    text.setText("Give the nerds wedgies");
-                }
-                if (position == 5) {
-                    text.setText("Sacrifice a sratstar");
-                }
-                if (position == 6) {
-                    text.setText("Go to the homecoming game");
-                }
-                if (position == 7) {
-                    text.setText("Eat at the dumpling truck");
-                }
-                if (position == 8) {
-                    text.setText("Complain about the food");
-                }
-                if (position == 9) {
-                    text.setText("Get food poisoning at the dining halls");
-                }
-                if (position == 10) {
-                    text.setText("Pull an all nighter in Clemons");
-                }
-                if (position == 11) {
-                    text.setText("Give a hug to Ms.Kathy");
-                }
-                if (position == 12) {
-                    text.setText("Pull an all nighter in Clemons");
-                }
-                if (position == 13) {
-                    text.setText("Dance at Trinity");
-                }
-                if (position == 14) {
-                    text.setText("Go hiking somewhere");
-                }
-                if (position == 15) {
-                    text.setText("Handshake with Dean Groves");
-                }
-                if (position == 16) {
-                    text.setText("Find a steam tunnel");
-                }
-                if (position == 17) {
-                    text.setText("Get an A in a class");
-                }
-                if (position == 18) {
-                    text.setText("Build a snowman on the lawn");
-                }
-                if (position == 19) {
-                    text.setText("Befriend a grad student");
-                }
-                if (position == 20) {
-                    text.setText("Have lunch with a professor");
-                }
-                // Because the list item contains multiple touch targets, you should not override
-                // onListItemClick. Instead, set a click listener for each target individually.
-                final Intent intent = new Intent(MainActivity.this, Info.class);
-                final TextView editText = (TextView) convertView.findViewById(R.id.text1); //instead of R.id.text1?
-                final TextView information = (TextView) convertView.findViewById(R.id.text2);
+                             * Here I think that we can start the new Activity. Somehow.
+                             */
+                            //Description
+                            String message = editText.getText().toString();
+                            //Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                            intent.putExtra("RESULT_MESSAGE", message);
 
-                convertView.findViewById(R.id.primary_target).setOnClickListener(
-                        new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                /**
-                                 Toast.makeText(MainActivity.this,
-                                 "Touched this noise. " + R.id.primary_target,
-                                 Toast.LENGTH_SHORT).show();
+                            //Details
+                            String details = information.getText().toString();
+                            intent.putExtra("INFO_MESSAGE", details);
 
-                                 * Here I think that we can start the new Activity. Somehow.
-                                 */
-                                //Description
-                                String message = editText.getText().toString();
-                                //Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
-                                intent.putExtra("RESULT_MESSAGE", message);
-
-                                //Details
-                                String details = information.getText().toString();
-                                intent.putExtra("INFO_MESSAGE", details);
-
-                                //Whether the task is complete or incomplete
-                                String iscomplete = "TASK INCOMPLETE";
-                                SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-                                String key = String.valueOf(position);
-                                int isDone = settings.getInt(key, 0);
-                                if (isDone == 1) {
-                                    iscomplete = "TASK COMPLETE";
-                                }
-                                intent.putExtra("IS_COMPLETE", iscomplete);
-
-                                //The position so we know which image to use
-                                intent.putExtra("POSITION", position);
-
-                                startActivity(intent);
+                            //Whether the task is complete or incomplete
+                            String iscomplete = "TASK INCOMPLETE";
+                            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+                            String key = String.valueOf(position);
+                            int isDone = settings.getInt(key, 0);
+                            if (isDone == 1) {
+                                iscomplete = "TASK COMPLETE";
                             }
-                        });
-                convertView.findViewById(R.id.secondary_action).setOnClickListener(
-                        new View.OnClickListener() {
-                            int number = 1;
+                            intent.putExtra("IS_COMPLETE", iscomplete);
 
-                            @Override
-                            public void onClick(View view) {
-                                //Toast.makeText(MainActivity.this,
-                                //       R.string.touched_secondary_message,
-                                //       Toast.LENGTH_SHORT).show();
+                            //The position so we know which image to use
+                            intent.putExtra("POSITION", position);
 
-                                boolean done;
-                                number++;
-                                ImageButton btn = (ImageButton) view;
-                                SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-                                SharedPreferences.Editor editor = settings.edit();
+                            startActivity(intent);
+                        }
+                    });
+            convertView.findViewById(R.id.secondary_action).setOnClickListener(
+                    new View.OnClickListener() {
+                        int number = 1;
 
-                                if (number % 2 == 1) {
-                                    if (position == 0 || position == 11) {
-                                        btn.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
-                                        editor.putInt(String.valueOf(position), 1);
-                                        //excuse_me.start();
-                                        //excuse_me.setLooping(false);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 0) {
-                                            free_hips.start();
-                                            free_hips.setLooping(false);
-                                        } else if (position == 11) {
-                                            yeah.start();
-                                            yeah.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 1 || position == 12) {
-                                        btn.setImageResource(R.drawable.deandra);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 1) {
-                                            Tania_laugh.start();
-                                            Tania_laugh.setLooping(false);
-                                        } else if (position == 12) {
-                                            satan.start();
-                                            satan.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 2 || position == 13) {
-                                        btn.setImageResource(R.drawable.jenna);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 2) {
-                                            poop_here.start();
-                                            poop_here.setLooping(false);
-                                        } else if (position == 13) {
-                                            yeah.start();
-                                            yeah.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 3 || position == 14) {
-                                        btn.setImageResource(R.drawable.mckenzie);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 3) {
-                                            satan.start();
-                                            satan.setLooping(false);
-                                        } else if (position == 14) {
-                                            mall.start();
-                                            mall.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 4 || position == 15) {
-                                        btn.setImageResource(R.drawable.rachel);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 4) {
-                                            free_hips.start();
-                                            free_hips.setLooping(false);
-                                        } else if (position == 15) {
-                                            yeah.start();
-                                            yeah.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 5 || position == 16) {
-                                        btn.setImageResource(R.drawable.shay);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 5) {
-                                            enough.start();
-                                            enough.setLooping(false);
-                                        } else if (position == 16) {
-                                            Tania_laugh.start();
-                                            Tania_laugh.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 6 || position == 17 || position == 10) {
-                                        btn.setImageResource(R.drawable.taylor);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 6) {
-                                            Tania_laugh.start();
-                                            Tania_laugh.setLooping(false);
-                                        } else if (position == 17) {
-                                            yeah.start();
-                                            yeah.setLooping(false);
-                                        } else if (position == 10) {
-                                            satan.start();
-                                            satan.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 7 || position == 18) {
-                                        btn.setImageResource(R.drawable.trisha);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 1) {
-                                            yeah.start();
-                                            yeah.setLooping(false);
-                                        } else if (position == 18) {
-                                            Tania_laugh.start();
-                                            Tania_laugh.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 8 || position == 19) {
-                                        btn.setImageResource(R.drawable.trisha2);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 8) {
-                                            excuse_me.start();
-                                            excuse_me.setLooping(false);
-                                        } else if (position == 19) {
-                                            yeah.start();
-                                            yeah.setLooping(false);
-                                        }
-                                    }
-                                    if (position == 9 || position == 20) {
-                                        btn.setImageResource(R.drawable.saison);
-                                        editor.putInt(String.valueOf(position), 1);
-                                        if (position == 9) {
-                                            poop_here.start();
-                                            poop_here.setLooping(false);
-                                        } else if (position == 20) {
-                                            Tania_laugh.start();
-                                            Tania_laugh.setLooping(false);
-                                        }
-                                    }
+                        @Override
+                        public void onClick(View view) {
+                            //Toast.makeText(MainActivity.this,
+                            //       R.string.touched_secondary_message,
+                            //       Toast.LENGTH_SHORT).show();
 
-                                } else {
-                                    btn.setImageResource(R.drawable.box);
-                                    number = 0;
-                                    editor.putInt(String.valueOf(position), 0);
+                            boolean done;
+                            number++;
+                            ImageButton btn = (ImageButton) view;
+                            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+                            SharedPreferences.Editor editor = settings.edit();
+
+                            if (number % 2 == 1) {
+                                if (position == 0 || position == 11) {
+                                    btn.setImageResource(R.drawable.brittnay); //Changes the button to purple thing
+                                    editor.putInt(String.valueOf(position), 1);
+                                    //excuse_me.start();
+                                    //excuse_me.setLooping(false);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 0) {
+                                        free_hips.start();
+                                        free_hips.setLooping(false);
+                                    } else if (position == 11) {
+                                        yeah.start();
+                                        yeah.setLooping(false);
+                                    }
                                 }
-                                editor.commit();
-                            }
+                                if (position == 1 || position == 12) {
+                                    btn.setImageResource(R.drawable.deandra);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 1) {
+                                        Tania_laugh.start();
+                                        Tania_laugh.setLooping(false);
+                                    } else if (position == 12) {
+                                        satan.start();
+                                        satan.setLooping(false);
+                                    }
+                                }
+                                if (position == 2 || position == 13) {
+                                    btn.setImageResource(R.drawable.jenna);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 2) {
+                                        poop_here.start();
+                                        poop_here.setLooping(false);
+                                    } else if (position == 13) {
+                                        yeah.start();
+                                        yeah.setLooping(false);
+                                    }
+                                }
+                                if (position == 3 || position == 14) {
+                                    btn.setImageResource(R.drawable.mckenzie);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 3) {
+                                        satan.start();
+                                        satan.setLooping(false);
+                                    } else if (position == 14) {
+                                        mall.start();
+                                        mall.setLooping(false);
+                                    }
+                                }
+                                if (position == 4 || position == 15) {
+                                    btn.setImageResource(R.drawable.rachel);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 4) {
+                                        free_hips.start();
+                                        free_hips.setLooping(false);
+                                    } else if (position == 15) {
+                                        yeah.start();
+                                        yeah.setLooping(false);
+                                    }
+                                }
+                                if (position == 5 || position == 16) {
+                                    btn.setImageResource(R.drawable.shay);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 5) {
+                                        enough.start();
+                                        enough.setLooping(false);
+                                    } else if (position == 16) {
+                                        Tania_laugh.start();
+                                        Tania_laugh.setLooping(false);
+                                    }
+                                }
+                                if (position == 6 || position == 17 || position == 10) {
+                                    btn.setImageResource(R.drawable.taylor);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 6) {
+                                        Tania_laugh.start();
+                                        Tania_laugh.setLooping(false);
+                                    } else if (position == 17) {
+                                        yeah.start();
+                                        yeah.setLooping(false);
+                                    } else if (position == 10) {
+                                        satan.start();
+                                        satan.setLooping(false);
+                                    }
+                                }
+                                if (position == 7 || position == 18) {
+                                    btn.setImageResource(R.drawable.trisha);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 1) {
+                                        yeah.start();
+                                        yeah.setLooping(false);
+                                    } else if (position == 18) {
+                                        Tania_laugh.start();
+                                        Tania_laugh.setLooping(false);
+                                    }
+                                }
+                                if (position == 8 || position == 19) {
+                                    btn.setImageResource(R.drawable.trisha2);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 8) {
+                                        excuse_me.start();
+                                        excuse_me.setLooping(false);
+                                    } else if (position == 19) {
+                                        yeah.start();
+                                        yeah.setLooping(false);
+                                    }
+                                }
+                                if (position == 9 || position == 20) {
+                                    btn.setImageResource(R.drawable.saison);
+                                    editor.putInt(String.valueOf(position), 1);
+                                    if (position == 9) {
+                                        poop_here.start();
+                                        poop_here.setLooping(false);
+                                    } else if (position == 20) {
+                                        Tania_laugh.start();
+                                        Tania_laugh.setLooping(false);
+                                    }
+                                }
 
-                        });
-            }
-                return convertView;
-            }
+                            } else {
+                                btn.setImageResource(R.drawable.box);
+                                number = 0;
+                                editor.putInt(String.valueOf(position), 0);
+                            }
+                            editor.commit();
+                        }
+
+                    });
+
+
+        return convertView;
+    }
 
         //These two methods disable RecycleView, I think...
         @Override
